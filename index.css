@@ -3,17 +3,12 @@
 
 body {
   background: linear-gradient(45deg, #ddf, #fdd);
+  margin: 0;
 }
 
 #main {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 2rem;
   color: #333;
   font-family: "Lora", serif;
-  max-width: 800px;
-  margin: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 #title {
@@ -33,7 +28,7 @@ h6 {
   margin: 0;
 }
 #img-caption {
-  padding: 1rem;
+  margin: 1rem;
 }
 #image {
   display: block;
@@ -42,16 +37,14 @@ h6 {
   height: auto;
 }
 #tribute-info {
-  margin: 0;
-  padding: 0 1rem;
+  margin: 0 1rem;
 }
 #reference {
   text-align: center;
 }
 blockquote {
   font-style: italic;
-  margin: 0;
-  padding: 1rem;
+  margin: 1rem;
 }
 dl dt {
   font-family: Lato, sans-serif;
@@ -59,4 +52,13 @@ dl dt {
 }
 a {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+  #main {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 2rem;
+    max-width: 800px;
+    margin: 9rem auto;
+  }
 }
